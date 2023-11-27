@@ -16,8 +16,8 @@
         <i class='bx bxs-user'></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt' ></i>
+        <input type="password" placeholder="Password" id="password" required>
+        <i class='bx bxs-show' id="toggleBtn" onclick="toggle()" ></i>
       </div>
       
       <button type="submit" class="btn">Sign In</button>
@@ -33,4 +33,21 @@
     </form>
   </div>
 </body>
+<!-- script for toggle switch -->
+<script>
+  function toggle(){
+    let toggleBtn=document.getElementById("toggleBtn");
+    let password=document.getElementById("password");
+    if(toggleBtn.classList.contains("bxs-show")){
+      password.type="text";
+      toggleBtn.classList.remove("bxs-show");
+      toggleBtn.classList.add("bxs-hide");
+    }
+    else{
+      password.type="password";
+      toggleBtn.classList.remove("bxs-hide");
+      toggleBtn.classList.add("bxs-show");
+    }
+  }
+</script>
 </html>

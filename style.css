@@ -109,3 +109,8 @@
   .register-link p a:hover{
     text-decoration: underline;
   }
+
+  
+  .bxs-show,.bxs-hide{
+    cursor: pointer;
+  }
