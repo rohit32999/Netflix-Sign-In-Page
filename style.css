@@ -16,10 +16,26 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(bg.jpg) no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.439), rgba(0, 0, 0, 0.435)), url("backgr.jpg");
   background-size: cover;
   background-position: center;
 }
+
+/* netflix logo */
+.banner {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  
+}
+a .netflix {
+    width: 175px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-left: 25.069px;
+    margin-top: 7px;
+}
+
 .wrapper{
   width: 420px;
   background: rgba(0, 0, 0, .75);
