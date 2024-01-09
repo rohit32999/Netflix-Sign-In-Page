@@ -311,3 +311,9 @@ a {
   }
 
 }
+@media screen and (max-width: 767px) {
+  body {
+    background-color: blue;
+    color: yellow;
+  }
+}
