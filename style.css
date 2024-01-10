@@ -94,20 +94,39 @@
   
   }
 
-  .remember-forgot a{
-    color: #fff;
+  .remember-forgot 
+   p {
+    color:rgb(123, 119, 119);
     text-decoration: none;
+    font-weight: 100px;
+   }
+  .remember-forgot a{
+    color:rgb(123, 119, 119);
+    text-decoration: none;
+    font-weight: 15px;
     margin-top: 35px;
   
   }
   .remember-forgot a:hover{
     text-decoration: underline;
+
   }
-  .register-link p a{
+  .register-link{
+    display: flex;
+    gap:8px;
+  }
+   .register-link p {
+    color:rgb(123, 119, 119);
+    text-align: left;
+    text-decoration: none;
+    font-weight: 100px;
+  }
+  .register-link  a{
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-  }
-  .register-link p a:hover{
+    font-weight: 50px;
+    
+    }
+  .register-link  a:hover{
     text-decoration: underline;
   }
