@@ -227,6 +227,7 @@ input[type="radio"] {
     padding: 50px 15px 10px;
     border-top: 6px solid;
     color: #474747;
+    margin: 100px;
 }
 
 .footer h2 {
@@ -263,6 +264,7 @@ input[type="radio"] {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #9b9696;
 }
 
 /* -----small screen----- */
