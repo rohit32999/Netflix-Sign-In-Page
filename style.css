@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   /* overflow: hidden; */
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,20 +24,21 @@ body{
 }
 
 /* netflix logo */
-.banner{
+.banner {
   padding: 20px;
   width: 100vw;
 }
+
 a .netflix {
-    width: 175px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin-left: 25.069px;
-    margin-top: 7px;
+  width: 175px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 25.069px;
+  margin-top: 7px;
 }
 
-.wrapper{
+.wrapper {
   width: 420px;
   background: rgba(0, 0, 0, .75);
   border: 2px solid rgba(255, 255, 255, .2);
@@ -46,23 +47,26 @@ a .netflix {
   border-radius: 12px;
   padding: 40px 50px;
 }
-.wrapper h1{
+
+.wrapper h1 {
   margin-top: 25px;
   font-size: 32px;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 550;
   text-align: left;
 }
-.wrapper .input-box{
+
+.wrapper .input-box {
   position: relative;
   width: 100%;
   height: 50px;
   background: #333;
   border-radius: 10px;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 30px 0;
 }
-.input-box input{
+
+.input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -74,10 +78,12 @@ a .netflix {
   color: #fff;
   padding: 20px 45px 50px 20px;
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
   color: #fff;
 }
-.input-box i{
+
+.input-box i {
   position: absolute;
   right: 10px;
   top: 30%;
@@ -85,24 +91,26 @@ a .netflix {
   font-size: 20px;
 
 }
-.wrapper .remember-forgot{
+
+.wrapper .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
   color: #ffffff9b;
   margin: -15px 0 70px;
 }
-.remember-forgot label input{
+
+.remember-forgot label input {
   accent-color: #fff;
   margin-right: 3px;
   margin-top: 35px;
 
 }
 
-.wrapper .btn{
+.wrapper .btn {
   width: 100%;
   height: 45px;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #d60b0b;
   border: none;
   outline: none;
@@ -114,29 +122,33 @@ a .netflix {
   font-weight: 600;
   margin-top: -30px;
 }
-.wrapper .register-link{
+
+.wrapper .register-link {
   font-size: 14.5px;
   text-align: center;
   margin: 20px 0 15px;
 
 }
 
-.remember-forgot a{
+.remember-forgot a {
   color: #fff;
   text-decoration: none;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin-top: 35px;
 
 }
-.remember-forgot a:hover{
+
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-.register-link p a{
+
+.register-link p a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
-.register-link p a:hover{
+
+.register-link p a:hover {
   text-decoration: underline;
 }
 
@@ -175,26 +187,26 @@ a .netflix {
 
 
 
-main{
+main {
   width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer{
+footer {
   width: 100%;
-  height: 17rem;
-  background: #00000087;
+  min-height: 17rem;
+  background: #000000fc;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .ftr-content {
-	width: 70%;
-	font-size: 1em;
+  width: 70%;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -202,21 +214,21 @@ footer{
 }
 
 .ftr-content a {
-	color: #999;
-  width: 25%;
+  color: #999;
+  /* width: 25%; */
   margin-bottom: 15px;
 }
 
 .ftr-content a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contact {
-	/* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .contact a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ftr {
@@ -226,106 +238,132 @@ footer{
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .select select {
-	width: 110px;
-    height: 50px;
-    border: none;
-    font-size: inherit;
-    /* padding: 13px; */
-    background: #000000;
-    color: white;
-    /* box-sizing: border-box; */
-    text-align: center;
-    border: .5px solid white;
-    border-radius: 5px;
+  width: 110px;
+  height: 50px;
+  border: none;
+  font-size: inherit;
+  /* padding: 13px; */
+  background: #000000;
+  color: white;
+  /* box-sizing: border-box; */
+  text-align: center;
+  border: .5px solid white;
+  border-radius: 5px;
 }
+
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-#netflix-logo{
+
+#netflix-logo {
   display: none;
 }
+
+.div1,
+.div2 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+
 
 /* for small width device */
 
 @media screen and (max-width:650px) {
 
-  body{
+  body {
     background: black;
     height: 100vh;
     justify-content: space-between;
   }
-  #video-container{
+
+  #video-container {
     display: none;
   }
-  main{
+
+  main {
     display: flex;
     flex-direction: column;
     height: max-content;
 
   }
-  #netflix-logo{
+
+  #netflix-logo {
     display: unset;
     width: 100%;
   }
 
-  #netflix-logo>img{
+  #netflix-logo>img {
     width: 30%;
   }
-  #content{
+
+  #content {
     width: 100%;
   }
-  .wrapper{
+
+  .wrapper {
     border: none;
     padding: 10px 20px;
     width: 100%;
   }
-  .wrapper .input-box{
+
+  .wrapper .input-box {
     border-radius: 5px;
   }
-  #input1{
+
+  #input1 {
     margin: 30px 0 20px 0;
   }
-  #input2{
+
+  #input2 {
     margin: 20px 0 35px 0;
   }
-  .input-box input{
+
+  .input-box input {
     border: none;
   }
-  .wrapper h1{
+
+  .wrapper h1 {
     margin-top: unset;
   }
-  footer{
+
+  footer {
     border-top: 2px solid #80808075;
   }
-  .ftr-content{
+
+  .ftr-content {
     width: 100%;
     padding: 0 20px;
   }
-  .ftr-content a{
+
+  .ftr-content a {
     width: 50%;
   }
 
 }
+
 @media(max-width: 767px) {
   body {
-   background-color: #333;
-   background-image: none;
+    background-color: #333;
+    background-image: none;
   }
-  #netflix-logo{
+
+  #netflix-logo {
     display: none;
   }
-  footer{
-    height: 10rem;
-  }
-  .banner img{
+
+  .banner img {
     width: 120px;
     position: fixed;
   }
-  main{
+
+  main {
     margin: 40px;
   }
 }
