@@ -45,21 +45,31 @@ a .netflix {
   backdrop-filter: blur(1px);
   color: #fff;
   border-radius: 12px;
-  padding: 40px 50px;
+  padding: 50px 50px;
 }
+
 
 .wrapper h1 {
   margin-top: 25px;
+  margin-bottom: 10px;
+
   font-size: 32px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 550;
   text-align: left;
 }
 
-.wrapper .input-box {
+.input-box i{
+  position:relative;
+  display:flex;
+  margin-top:-40px;
+  margin-left: 270px;
+  }
+form .input-box{
+
   position: relative;
-  width: 100%;
   height: 50px;
+
   background: #333;
   border-radius: 10px;
   font-family: 'Segoe UI', sans-serif;
@@ -68,10 +78,17 @@ a .netflix {
 
 .input-box input {
   width: 100%;
+
+  margin-bottom: 16px;
+
+}
+.input-box input{
+
   height: 100%;
-  background: transparent;
-  border: none;
+  width:100%;
+  background: #333;
   outline: none;
+
   /* border: 2px solid rgba(255, 255, 255, .2); */
   border-radius: 0px;
   font-size: 16px;
@@ -80,19 +97,34 @@ a .netflix {
 }
 
 .input-box input::placeholder {
+
+  border: none;
   color: #fff;
-}
+  font-size: 1rem;
+  border-radius: 40px;
+  padding: 0 20px;
 
-.input-box i {
+
+}
+.input-box label{
+
   position: absolute;
-  right: 10px;
-  top: 30%;
-  transform: translate(-50%);
-  font-size: 20px;
-
+  left: 20px;
+  top: 40%;
+  color: grey;
+  font-size:1rem;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.1s ease;
+}
+.input-box input:is(:focus, :valid) ~ label{
+  font-size: 0.75rem;
+  transform: translateY(-130%);
 }
 
-.wrapper .remember-forgot {
+
+.wrapper .remember-forgot{
+
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
@@ -223,9 +255,11 @@ footer {
   text-decoration: underline;
 }
 
+
 .contact {
   margin-bottom: 30px;
 }
+
 
 .contact a:hover {
   text-decoration: underline;
