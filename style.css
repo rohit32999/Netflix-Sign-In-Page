@@ -40,11 +40,11 @@ a .netflix {
 .wrapper{
   width: 420px;
   background: rgba(0, 0, 0, .75);
-  border: 2px solid rgba(255, 255, 255, .2);
+  
   backdrop-filter: blur(1px);
   color: #fff;
-  border-radius: 12px;
-  padding: 50px 50px;
+  border-radius: 5px;
+  padding: 150px 50px;
 }
 .wrapper h1{
   margin-bottom: 10px;
@@ -73,7 +73,7 @@ form .input-box{
   border: none;
   color: #fff;
   font-size: 1rem;
-  border-radius: 40px;
+  border-radius: 4px;
   padding: 0 20px;
 
 
@@ -141,10 +141,15 @@ form .input-box{
 .remember-forgot a:hover{
   text-decoration: underline;
 }
+.register-link{
+  display: inline;
+  color: grey;
+  font-weight:60px ;
+}
 .register-link p a{
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 60px;
 }
 .register-link p a:hover{
   text-decoration: underline;
