@@ -167,9 +167,10 @@
                 if (radio.getAttribute('checked')) {
                     radio.removeAttribute('checked')
                     radio.checked = false;
-                }
-                else
+                } else {
                     radio.setAttribute('checked', 'true')
+                    radioButtons.forEach((el) => {if (el !== radio) el.removeAttribute('checked')});
+                }
             }
         }
     })
