@@ -159,4 +159,19 @@
 <script>
     AOS.init();
 </script>
+<script>
+    const radioButtons = document.getElementsByName('accordion');
+    radioButtons.forEach((radio) => {
+        radio.onclick = function () {
+            if (radio.checked) {
+                if (radio.getAttribute('checked')) {
+                    radio.removeAttribute('checked')
+                    radio.checked = false;
+                }
+                else
+                    radio.setAttribute('checked', 'true')
+            }
+        }
+    })
+</script>
 </html>
