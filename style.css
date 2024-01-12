@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   /* overflow: hidden; */
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,54 +20,60 @@ body{
   background-size: cover;
   /* background-position: center; */
   flex-direction: column;
+  position: relative;
 
 }
 
 /* netflix logo */
-.banner{
+.banner {
   padding: 20px;
   width: 100vw;
 }
+
 a .netflix {
-    width: 175px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    margin-left: 25.069px;
-    margin-top: 7px;
+  width: 175px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 25.069px;
+  margin-top: 7px;
 }
 
-.wrapper{
+.wrapper {
   width: 420px;
   background: rgba(0, 0, 0, .75);
-  
+
   backdrop-filter: blur(1px);
   color: #fff;
   border-radius: 5px;
   padding: 150px 50px;
 }
-.wrapper h1{
+
+.wrapper h1 {
   margin-bottom: 10px;
   font-size: 32px;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 550;
   text-align: left;
 }
-.input-box i{
-  position:relative;
-  display:flex;
-  margin-top:-40px;
+
+.input-box i {
+  position: relative;
+  display: flex;
+  margin-top: -40px;
   margin-left: 270px;
-  }
-form .input-box{
+}
+
+form .input-box {
   position: relative;
   height: 50px;
   margin-bottom: 16px;
 
 }
-.input-box input{
+
+.input-box input {
   height: 100%;
-  width:100%;
+  width: 100%;
   background: #333;
   outline: none;
   border: none;
@@ -78,41 +84,44 @@ form .input-box{
 
 
 }
-.input-box label{
+
+.input-box label {
   position: absolute;
   left: 20px;
   top: 40%;
   color: grey;
-  font-size:1rem;
+  font-size: 1rem;
   pointer-events: none;
   transform: translateY(-50%);
   transition: all 0.1s ease;
 }
-.input-box input:is(:focus, :valid) ~ label{
+
+.input-box input:is(:focus, :valid)~label {
   font-size: 0.75rem;
   transform: translateY(-130%);
 }
 
 
 
-.wrapper .remember-forgot{
+.wrapper .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
   color: #ffffff9b;
   margin: -15px 0 70px;
 }
-.remember-forgot label input{
+
+.remember-forgot label input {
   accent-color: #fff;
   margin-right: 3px;
   margin-top: 35px;
 
 }
 
-.wrapper .btn{
+.wrapper .btn {
   width: 100%;
   height: 45px;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: #d60b0b;
   border: none;
   outline: none;
@@ -124,34 +133,39 @@ form .input-box{
   font-weight: 600;
   margin-top: -30px;
 }
-.wrapper .register-link{
+
+.wrapper .register-link {
   font-size: 14.5px;
   text-align: center;
   margin: 20px 0 15px;
 
 }
 
-.remember-forgot a{
+.remember-forgot a {
   color: #fff;
   text-decoration: none;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin-top: 35px;
 
 }
-.remember-forgot a:hover{
+
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-.register-link{
+
+.register-link {
   display: inline;
   color: grey;
-  font-weight:60px ;
+  font-weight: 60px;
 }
-.register-link p a{
+
+.register-link p a {
   color: white;
   text-decoration: none;
   font-weight: 60px;
 }
-.register-link p a:hover{
+
+.register-link p a:hover {
   text-decoration: underline;
 }
 
@@ -190,26 +204,69 @@ form .input-box{
 
 
 
-main{
+main {
   width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer{
+footer {
   width: 100%;
-  height: 17rem;
-  background: #00000087;
+  background: #000000ef;
+}
+
+.footer {
+  padding: 50px 15px 10px;
+  border-top: 6px solid;
+  background: #000000ef;
+  color: #474747;
+  padding: 20px;
+  height: 100%;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.row {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer .col a {
+  display: block;
+  color: #9b9696;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.footer .lang-btn {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
 }
 
 .ftr-content {
-	width: 70%;
-	font-size: 1em;
+  width: 70%;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -217,16 +274,17 @@ footer{
 }
 
 .ftr-content a {
-	color: #999;
+  color: #999;
   width: 25%;
   margin-bottom: 15px;
 }
 
 .ftr-content a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
 .contact a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ftr {
@@ -239,23 +297,25 @@ footer{
 }
 
 .select select {
-	width: 110px;
-    height: 50px;
-    border: none;
-    font-size: inherit;
-    /* padding: 13px; */
-    background: #000000;
-    color: white;
-    /* box-sizing: border-box; */
-    text-align: center;
-    border: .5px solid white;
-    border-radius: 5px;
+  width: 110px;
+  height: 50px;
+  border: none;
+  font-size: inherit;
+  /* padding: 13px; */
+  background: #000000;
+  color: white;
+  /* box-sizing: border-box; */
+  text-align: center;
+  border: .5px solid white;
+  border-radius: 5px;
 }
+
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-#netflix-logo{
+
+#netflix-logo {
   display: none;
 }
 
@@ -263,79 +323,93 @@ a {
 
 @media screen and (max-width:650px) {
 
-  body{
+  body {
     background: black;
     height: 100vh;
     justify-content: space-between;
   }
-  #video-container{
+
+  #video-container {
     display: none;
   }
-  main{
+
+  main {
     display: flex;
     flex-direction: column;
     height: max-content;
 
   }
-  #netflix-logo{
+
+  #netflix-logo {
     display: unset;
     width: 100%;
   }
 
-  #netflix-logo>img{
+  #netflix-logo>img {
     width: 30%;
   }
-  #content{
+
+  #content {
     width: 100%;
   }
-  .wrapper{
+
+  .wrapper {
     border: none;
     padding: 10px 20px;
     width: 100%;
   }
-  .wrapper .input-box{
+
+  .wrapper .input-box {
     border-radius: 5px;
   }
-  #input1{
+
+  #input1 {
     margin: 30px 0 20px 0;
   }
-  #input2{
+
+  #input2 {
     margin: 20px 0 35px 0;
   }
-  .input-box input{
+
+  .input-box input {
     border: none;
   }
-  .wrapper h1{
+
+  .wrapper h1 {
     margin-top: unset;
   }
-  footer{
+
+  footer {
     border-top: 2px solid #80808075;
   }
-  .ftr-content{
+
+  .ftr-content {
     width: 100%;
     padding: 0 20px;
   }
-  .ftr-content a{
+
+  .ftr-content a {
     width: 50%;
   }
 
 }
+
 @media(max-width: 767px) {
   body {
-   background-color: #333;
-   background-image: none;
+    background-color: #333;
+    background-image: none;
   }
-  #netflix-logo{
+
+  #netflix-logo {
     display: none;
   }
-  footer{
-    height: 10rem;
-  }
-  .banner img{
+
+  .banner img {
     width: 120px;
     position: fixed;
   }
-  main{
+
+  main {
     margin: 40px;
   }
 }
