@@ -250,12 +250,21 @@ input[type="radio"] {
     border-top: 6px solid;
     color: #474747;
     margin: 100px;
+    width: 100%;
+    padding: 20px;
 }
 
 .footer h2 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 .footer .col {
@@ -277,12 +286,13 @@ input[type="radio"] {
     padding: 10px 0;
 }
 
-.footer .lang-btn{
+.footer .lang-btn {
     color: #fff;
     padding: 10px 20px;
-    border-radius:  3px;
+    border-radius: 3px;
 }
-.copyright-txt{
+
+.copyright-txt {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -290,55 +300,70 @@ input[type="radio"] {
 }
 
 /* -----small screen----- */
-@media only screen and (max-width:600px){
-    .logo{
+@media only screen and (max-width:600px) {
+    .logo {
         width: 100px;
     }
-    nav button{
+
+    nav button {
         padding: 5px 10px;
     }
-    nav .lang-btn{
+
+    nav .lang-btn {
         padding: 4px 8px;
     }
-    .header-content{
+
+    .header-content {
         position: unset;
         transform: none;
         padding-top: 150px;
     }
-    .header-content h1{
+
+    .header-content h1 {
         font-size: 30px;
     }
-    .email-signup button{
+
+    .email-signup button {
         font-size: 12px;
         padding: 10px 15px;
     }
-    .text-col, .img-col{
+
+    .text-col,
+    .img-col {
         flex-basis: 100%;
     }
-    .features p{
+
+    .features p {
         font-size: 15px;
     }
-    .features h2{
+
+    .features h2 {
         font-size: 30px;
     }
-    .row:nth-child(2), .row:nth-child(4){
+
+    .row:nth-child(2),
+    .row:nth-child(4) {
         flex-direction: column-reverse;
     }
-    .features .row{
+
+    .features .row {
         padding: 10px 0;
     }
-    .faq h2{
+
+    .faq h2 {
         font-size: 20px;
     }
-    .accordion .content{
+
+    .accordion .content {
         font-size: 14px;
     }
-    .accordion li label{
+
+    .accordion li label {
         padding: 10px;
         font-size: 14px;
     }
-    label::after{
+
+    label::after {
         font-size: 22px;
     }
 }
-
