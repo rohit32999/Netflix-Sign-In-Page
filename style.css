@@ -46,7 +46,10 @@ a .netflix {
   backdrop-filter: blur(1px);
   color: #fff;
   border-radius: 5px;
-  padding: 150px 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 150px;
 }
 
 .wrapper h1 {
