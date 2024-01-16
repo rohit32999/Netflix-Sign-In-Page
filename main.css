@@ -29,8 +29,9 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 160px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 nav button {
@@ -38,7 +39,7 @@ nav button {
     outline: 0;
     background: #db0001;
     color: #fff;
-    padding: 7px 20px;
+    padding: 10px 17px;
     font-size: 12px;
     border-radius: 4px;
     margin-left: 10px;
@@ -49,14 +50,17 @@ nav button {
 #abc {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .lang-btn {
     display: inline-flex;
     align-items: center;
     background: transparent;
-    border: 1px solid #fff;
-    padding: 7px 10px;
+    border: 1px solid #757575aa;
+    padding: 9px 14px;
+    font-size: 16px;
 }
 
 .lang-btn img {
@@ -70,29 +74,40 @@ nav button {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
+    padding-bottom: 90px;
+    max-width: 70%;
 }
 
 .header-content h1 {
-    font-size: 60px;
+    font-size: 45px;
     line-height: 70px;
-    font-weight: 600;
-    max-width: 650px;
+    font-weight: 900;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .header-content h3 {
     font-weight: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
+.header-content p {
+    font-size: 20px;
+}
+
+
 .email-signup {
-    background: #fff;
+    background-color: rgba(98, 98, 98, 0.5);
     border-radius: 4px;
     display: flex;
     align-items: center;
     margin-top: 30px;
     overflow: hidden;
-
+    width: 550px;
+    margin-left: 202px;
 }
 
 .email-signup input {
@@ -100,6 +115,12 @@ nav button {
     border: 0;
     outline: 0;
     margin-left: 20px;
+    background-color: rgba(98, 98, 98, 0.5);
+}
+
+.email-signup input::placeholder {
+    color: rgb(171, 178, 183);
+    font-size: 17px;
 }
 
 .email-signup button {
@@ -110,6 +131,7 @@ nav button {
     font-size: 16px;
     cursor: pointer;
     padding: 15px 30px;
+    border-radius: 5px;
 }
 
 .features {
@@ -227,12 +249,22 @@ input[type="radio"] {
     padding: 50px 15px 10px;
     border-top: 6px solid;
     color: #474747;
+    margin: 100px;
+    width: 100%;
+    padding: 20px;
 }
 
 .footer h2 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 .footer .col {
@@ -254,70 +286,87 @@ input[type="radio"] {
     padding: 10px 0;
 }
 
-.footer .lang-btn{
+.footer .lang-btn {
     color: #fff;
     padding: 10px 20px;
-    border-radius:  3px;
+    border-radius: 3px;
 }
-.copyright-txt{
+
+.copyright-txt {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #9b9696;
 }
 
 /* -----small screen----- */
-@media only screen and (max-width:600px){
-    .logo{
+@media only screen and (max-width:600px) {
+    .logo {
         width: 100px;
     }
-    nav button{
+
+    nav button {
         padding: 5px 10px;
     }
-    nav .lang-btn{
+
+    nav .lang-btn {
         padding: 4px 8px;
     }
-    .header-content{
+
+    .header-content {
         position: unset;
         transform: none;
         padding-top: 150px;
     }
-    .header-content h1{
+
+    .header-content h1 {
         font-size: 30px;
     }
-    .email-signup button{
+
+    .email-signup button {
         font-size: 12px;
         padding: 10px 15px;
     }
-    .text-col, .img-col{
+
+    .text-col,
+    .img-col {
         flex-basis: 100%;
     }
-    .features p{
+
+    .features p {
         font-size: 15px;
     }
-    .features h2{
+
+    .features h2 {
         font-size: 30px;
     }
-    .row:nth-child(2), .row:nth-child(4){
+
+    .row:nth-child(2),
+    .row:nth-child(4) {
         flex-direction: column-reverse;
     }
-    .features .row{
+
+    .features .row {
         padding: 10px 0;
     }
-    .faq h2{
+
+    .faq h2 {
         font-size: 20px;
     }
-    .accordion .content{
+
+    .accordion .content {
         font-size: 14px;
     }
-    .accordion li label{
+
+    .accordion li label {
         padding: 10px;
         font-size: 14px;
     }
-    label::after{
+
+    label::after {
         font-size: 22px;
     }
 }
-
 
 .col a{
     transition: all 0.2s ease-in-out !important;

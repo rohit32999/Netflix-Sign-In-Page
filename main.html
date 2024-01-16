@@ -12,7 +12,7 @@
 <body>
    <div class="header">
     <nav>
-        <img src="images/logo.png" class="logo" alt="logo">
+        <img src="logoNetflix.png" class="logo" alt="logo">
         <div>
             <button class="lang-btn">English <img src="images/down-icon.png" alt=""></button>
             <button><a id="abc" href="signup.html">Sign In</a></button>
@@ -21,7 +21,7 @@
     <div class="header-content">
         <h1>Unlimited movies, TV shows and more</h1>
         <h3>Watch anywhere. Cancel anytime.</h3>
-        <p>Ready to watch? Enter your email to create or restart your membership</p>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
         <form class="email-signup">
             <input type="email" placeholder="Email address" required>
             <button type="submit">Get Started</button>
@@ -150,6 +150,30 @@
                 <a href="#">Terms of Use</a>
                 <a href="#">Contact Us</a>
             </div>
+    <h2>Questions? call 000-800-919-1694</h2>
+    <div class="row">
+        <div class="col">
+            <a href="https://help.netflix.com/en/node/412">FAQ</a>
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a>
+            <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+            <a href="https://fast.com/">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="https://help.netflix.com/en/">Help Center</a>
+            <a href="https://jobs.netflix.com/">Jobs</a>
+            <a href="#">Cookies Preferences</a>
+            <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="signup.html">Account</a>
+            <a href="https://devices.netflix.com/en/">Ways to watch</a>
+            <a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>
+            <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="https://media.netflix.com/en/">Media Centre</a>
+            <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+            <a href="https://help.netflix.com/en/contactus">Contact Us</a>
         </div>
         <button class="lang-btn">English <img src="images/down-icon.png" alt=""></button>
         <p class="copyright-txt">Netflix India</p>
@@ -158,5 +182,21 @@
 </body>
 <script>
     AOS.init();
+</script>
+<script>
+    const radioButtons = document.getElementsByName('accordion');
+    radioButtons.forEach((radio) => {
+        radio.onclick = function () {
+            if (radio.checked) {
+                if (radio.getAttribute('checked')) {
+                    radio.removeAttribute('checked')
+                    radio.checked = false;
+                } else {
+                    radio.setAttribute('checked', 'true')
+                    radioButtons.forEach((el) => {if (el !== radio) el.removeAttribute('checked')});
+                }
+            }
+        }
+    })
 </script>
 </html>

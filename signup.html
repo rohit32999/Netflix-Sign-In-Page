@@ -32,12 +32,16 @@
                     <form action="">
                         <h1>Sign In</h1>
                         <div class="input-box" id="input1">
-                            <input type="text" placeholder="Email or phone number" required>
+                            <input type="text" required>
                             <i class='bx bxs-user'></i>
+                            <label>Email or phone number</label>
+
                         </div>
                         <div class="input-box" id="input2">
-                            <input type="password" placeholder="Password" required>
+                            <input type="password" required>
                             <i class='bx bxs-lock-alt'></i>
+                            <label>Password</label>
+
                         </div>
 
                         <button type="submit" class="btn">Sign In</button>
@@ -49,6 +53,7 @@
 
                         <div class="register-link">
                             <p>New to Netflix? <a href="#">Sign up now</a></p>
+                            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot</p>
                         </div>
                     </form>
                 </div>
@@ -56,32 +61,36 @@
         </div>
     </main>
 
-    <footer>
-
-        <div class="ftr-content">
-            <div class="contact">
-                <a href="#">Quesions? Call 000-800-919-1694</a>
-            </div>
-            <div class="ftr">
+</body>
+<footer>
+    <div class="footer">
+        <h2>Questions? call 000-800-919-1694</h2>
+        <div class="row">
+            <div class="col">
                 <a href="#">FAQ</a>
-                <a href="#">Help Centre</a>
                 <a href="#">Terms of use</a>
-                <a href="#">Privacy</a>
-                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Centre</a>
                 <a href="#">Corporate Information</a>
             </div>
-            <div class="select">
-                <select>
-                    <option>English</option>
-                    <option>हिन्दी</option>
-                    
-                </select>
+            <div class="col">
+                <a href="#">Terms of Use</a>
+
+            </div>
+            <div class="col">
+                <a href="#">Privacy</a>
+
             </div>
         </div>
-       
+        <div class="select">
+            <select>
+                <option>English</option>
+                <option>हिन्दी</option>
 
-    </footer>
-</body>
+            </select>
+        </div>
+</footer>
 <script src="./script.js"></script>
 
 </html>
