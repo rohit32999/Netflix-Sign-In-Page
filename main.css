@@ -367,3 +367,19 @@ input[type="radio"] {
         font-size: 22px;
     }
 }
+
+.col a{
+    transition: all 0.2s ease-in-out !important;
+    text-decoration: none !important;
+    color: #bfbfbf !important;
+}
+.col a:hover{
+    transform: translateY(-3px) !important;
+    color: #fff !important;
+}
+.col{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
