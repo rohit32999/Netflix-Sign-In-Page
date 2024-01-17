@@ -88,7 +88,7 @@ form .input-box {
 .input-box label {
   position: absolute;
   left: 20px;
-  top: 40%;
+  top: 50%;
   color: grey;
   font-size: 1rem;
   pointer-events: none;
