@@ -42,15 +42,16 @@ a .netflix {
 .wrapper {
   width: 420px;
   background: rgba(0, 0, 0, .75);
-
+  height: 98vh;
   backdrop-filter: blur(1px);
   color: #fff;
   border-radius: 5px;
-  padding: 150px 50px;
+  padding: 100px 50px;
+  margin: 50px;
 }
 
 .wrapper h1 {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-size: 32px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 550;
@@ -131,7 +132,7 @@ form .input-box {
   font-size: 16px;
   color: #fff;
   font-weight: 600;
-  margin-top: -30px;
+  margin-top: 30px;
 }
 
 .wrapper .register-link {
@@ -141,11 +142,17 @@ form .input-box {
 
 }
 
+.remember-forgot label {
+  font-size: 13px;
+  color: grey;
+}
+
 .remember-forgot a {
-  color: #fff;
+  color: grey;
   text-decoration: none;
   font-family: 'Segoe UI', sans-serif;
-  margin-top: 35px;
+  font-size: 13px;
+  margin-top: 33px;
 
 }
 
@@ -156,17 +163,35 @@ form .input-box {
 .register-link {
   display: inline;
   color: grey;
-  font-weight: 60px;
+
+
+
+}
+
+.register-link p {
+  text-align: left;
+  font-size: 15px;
 }
 
 .register-link p a {
   color: white;
+
   text-decoration: none;
   font-weight: 60px;
 }
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+.register p {
+  font-size: 13px;
+  margin: 20px auto;
+}
+
+.register a {
+  font-size: 12px;
+  color: blue !important;
 }
 
 
@@ -215,28 +240,48 @@ main {
 footer {
   width: 100%;
   background: #000000ef;
+  margin-top: 90px;
+  height: 300px;
 }
 
 .footer {
   padding: 50px 15px 10px;
   border-top: 6px solid;
-  background: #000000ef;
-  color: #474747;
+
+
   padding: 20px;
   height: 100%;
 }
 
-.footer h2 {
+.footer   {
+  font-size: 18px;
+  
+  
+  
+  font-size: 17px;
+}
+.footer .footer1 {
+  margin: 5px 230px;
+  color: grey;
+}
+.footer a  {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 30px;
+  color: grey;
+  font-size: 17px;
 }
-
+.footer  a:hover {
+  text-decoration:underline;
+}
 .row {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin:0px 230px;
 }
+
+
 
 .footer .col {
   flex-basis: 25%;
@@ -263,6 +308,9 @@ footer {
   padding: 10px 20px;
   border-radius: 3px;
 }
+.row a:hover{
+  text-decoration:underline;
+}
 
 .ftr-content {
   width: 70%;
@@ -280,7 +328,7 @@ footer {
 }
 
 .ftr-content a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contact a:hover {
@@ -300,6 +348,7 @@ footer {
   width: 110px;
   height: 50px;
   border: none;
+  margin: 0px 230px;
   font-size: inherit;
   /* padding: 13px; */
   background: #000000;
